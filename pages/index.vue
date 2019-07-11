@@ -5,7 +5,7 @@
         <Logo />
         <VuetifyLogo />
       </div>
-      {{ listResults }}
+      {{ $store.state.user }}
       <v-card>
         <v-card-title class="headline">
           Welcome to the Vuetify + Nuxt.js template

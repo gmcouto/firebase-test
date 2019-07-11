@@ -37,7 +37,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/firebase', '~/plugins/fireauth'],
   /*
    ** Nuxt.js modules
    */
@@ -66,6 +66,9 @@ export default {
       error: colors.deepOrange.accent4,
       success: colors.green.accent3
     }
+  },
+  router: {
+    middleware: 'auth'
   },
   /*
    ** Build configuration

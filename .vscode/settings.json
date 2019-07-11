@@ -17,5 +17,6 @@
   "editor.formatOnSave": false,
   "vetur.validation.template": true,
 "prettier.endOfLine": "lf",
-"files.eol": "\n"
+"files.eol": "\n",
+"editor.tabSize": 2
 }
