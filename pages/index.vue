@@ -79,12 +79,14 @@ export default {
     }
   },
   async mounted() {
-    console.log(
-      (await storage.ref('/').listAll()).items.map((ref) => ref.location)
-    )
-    this.listResults = (await storage.ref('/').listAll()).items.map(
-      (ref) => ref.location
-    )
+    if (this.$store.user) {
+      console.log(
+        (await storage.ref('/').listAll()).items.map((ref) => ref.location)
+      )
+      this.listResults = (await storage.ref('/').listAll()).items.map(
+        (ref) => ref.location
+      )
+    }
   }
 }
 </script>

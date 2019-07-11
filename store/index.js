@@ -1,7 +1,7 @@
 import { auth } from '../plugins/firebase'
 
 export const state = () => ({
-  user: null
+  user: {}
 })
 
 export const getters = {}
